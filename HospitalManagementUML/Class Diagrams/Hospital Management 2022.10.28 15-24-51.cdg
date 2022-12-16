@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Hospital Management">
+  <ClassDiagramComponents>
+    <Class name="City" package="City" visibility="public" xPosition="1840.0" yPosition="906.0">
+      <Fields>
+        <Field name="City" type="String" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="setCity" returnType="void" visibility="public">
+          <Argument type="String" name="City"/>
+        </Method>
+        <Method name="getCity" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Community" package="Community" visibility="public" xPosition="1936.0" yPosition="1178.0">
+      <Fields>
+        <Field name="Community" type="String" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="setCommunity" returnType="void" visibility="public">
+          <Argument type="String" name="Community"/>
+        </Method>
+        <Method name="getCommunity" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Doctor" package="Doctor" visibility="public" xPosition="557.0" yPosition="1489.0">
+      <Fields>
+        <Field name="name" type="String" visibility="package"/>
+        <Field name="username" type="String" visibility="package"/>
+        <Field name="password" type="String" visibility="package"/>
+        <Field name="phno" type="int" visibility="package"/>
+        <Field name="city" type="String" visibility="package"/>
+        <Field name="specialization" type="String" visibility="package"/>
+        <Field name="hospitalName" type="String" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="setHospitalName" returnType="void" visibility="public">
+          <Argument type="String" name="hospitalName"/>
+        </Method>
+        <Method name="getHospitalName" returnType="String" visibility="public"/>
+        <Method name="setSpecialization" returnType="void" visibility="public">
+          <Argument type="String" name="specialization"/>
+        </Method>
+        <Method name="getSpecialization" returnType="String" visibility="public"/>
+        <Method name="setCity" returnType="void" visibility="public">
+          <Argument type="String" name="city"/>
+        </Method>
+        <Method name="getCity" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="setUsername" returnType="void" visibility="public">
+          <Argument type="String" name="username"/>
+        </Method>
+        <Method name="setPassword" returnType="void" visibility="public">
+          <Argument type="String" name="password"/>
+        </Method>
+        <Method name="setPhno" returnType="void" visibility="public">
+          <Argument type="int" name="phno"/>
+        </Method>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="getUsername" returnType="String" visibility="public"/>
+        <Method name="getPassword" returnType="String" visibility="public"/>
+        <Method name="getPhno" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="DoctorDirectory" package="Doctor" visibility="public" xPosition="1146.0" yPosition="1456.0">
+      <Fields>
+        <Field name="list" type="ArrayList&lt;Doctor&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="setList" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Doctor&gt;" name="list"/>
+        </Method>
+        <Method name="getList" returnType="ArrayList&lt;Doctor&gt;" visibility="public"/>
+        <Method name="setDoctorDirectory" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Doctor&gt;" name="doctorDirectory"/>
+        </Method>
+        <Method name="addNewDoctor" returnType="Doctor" visibility="public"/>
+        <Method name="deleteDoctor" returnType="void" visibility="public">
+          <Argument type="Doctor" name="newDoctor"/>
+        </Method>
+        <Method name="getDoctorDirectory" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Encounter" package="Encounter" visibility="public" xPosition="1309.0" yPosition="666.0">
+      <Fields>
+        <Field name="UpdateTime" type="String" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="setUpdateTime" returnType="void" visibility="public">
+          <Argument type="String" name="UpdateTime"/>
+        </Method>
+        <Method name="getUpdateTime" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="EncounterHistory" package="Encounter" visibility="public" xPosition="1763.0" yPosition="502.0">
+      <Fields>
+        <Field name="EncounterHistory" type="ArrayList&lt;Encounter&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="setEncounterHistory" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Encounter&gt;" name="EncounterHistory"/>
+        </Method>
+        <Method name="getEncounterHistory" returnType="ArrayList&lt;Encounter&gt;" visibility="public"/>
+        <Method name="addNewEncounter" returnType="Encounter" visibility="public"/>
+        <Method name="deleteEncounter" returnType="void" visibility="public">
+          <Argument type="Encounter" name="E"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Hospital" package="Hospital" visibility="public" xPosition="2188.0" yPosition="895.0">
+      <Fields>
+        <Field name="Name" type="String" visibility="package"/>
+        <Field name="Address" type="String" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="setAddress" returnType="void" visibility="public">
+          <Argument type="String" name="Address"/>
+        </Method>
+        <Method name="getAddress" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="Name"/>
+        </Method>
+        <Method name="getName" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="HospitalDirectory" package="Hospital" visibility="public" xPosition="2234.0" yPosition="502.0">
+      <Fields>
+        <Field name="HospitalDirectory" type="ArrayList&lt;Hospital&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="setHospitalDirectory" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Hospital&gt;" name="HospitalDirectory"/>
+        </Method>
+        <Method name="getHospitalDirectory" returnType="ArrayList&lt;Hospital&gt;" visibility="public"/>
+        <Method name="addHospital" returnType="Hospital" visibility="public"/>
+        <Method name="deleteHospital" returnType="void" visibility="public">
+          <Argument type="Hospital" name="h"/>
+        </Method>
+        <Method name="getDbHospitalDirectory" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Patient" package="Patient" visibility="public" xPosition="920.0" yPosition="952.0">
+      <Fields>
+        <Field name="PatientID" type="int" visibility="private"/>
+        <Field name="EH" type="EncounterHistory" visibility="package"/>
+        <Field name="abnormal" type="boolean" visibility="private"/>
+        <Field name="abnormalBloodPressure" type="boolean" visibility="private"/>
+        <Field name="abnormalTemperature" type="boolean" visibility="private"/>
+        <Field name="abnormalPulse" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="setPatientID" returnType="void" visibility="public">
+          <Argument type="int" name="PatientID"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="setEH" returnType="void" visibility="public">
+          <Argument type="EncounterHistory" name="EH"/>
+        </Method>
+        <Method name="setAbnormal" returnType="void" visibility="public">
+          <Argument type="boolean" name="abnormal"/>
+        </Method>
+        <Method name="setAbnormalBloodPressure" returnType="void" visibility="public">
+          <Argument type="boolean" name="abnormalBloodPressure"/>
+        </Method>
+        <Method name="setAbnormalTemperature" returnType="void" visibility="public">
+          <Argument type="boolean" name="abnormalTemperature"/>
+        </Method>
+        <Method name="setAbnormalPulse" returnType="void" visibility="public">
+          <Argument type="boolean" name="abnormalPulse"/>
+        </Method>
+        <Method name="getPatientID" returnType="int" visibility="public"/>
+        <Method name="getEH" returnType="EncounterHistory" visibility="public"/>
+        <Method name="isAbnormal" returnType="boolean" visibility="public"/>
+        <Method name="isAbnormalBloodPressure" returnType="boolean" visibility="public"/>
+        <Method name="isAbnormalTemperature" returnType="boolean" visibility="public"/>
+        <Method name="isAbnormalPulse" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="PatientDirectory" package="Patient" visibility="public" xPosition="229.0" yPosition="1142.0">
+      <Fields>
+        <Field name="patientDirectory" type="ArrayList&lt;Patient&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getPatientDirectory" returnType="ArrayList&lt;Patient&gt;" visibility="public"/>
+        <Method name="setPatientDirectory" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Patient&gt;" name="patientDirectory"/>
+        </Method>
+        <Method name="addNewPatient" returnType="Patient" visibility="public"/>
+        <Method name="deletePatient" returnType="void" visibility="public">
+          <Argument type="Patient" name="newPatient"/>
+        </Method>
+        <Method name="getDbPatientDirectory" returnType="void" visibility="public"/>
+        <Method name="getDbCommunityPatientDirectory" returnType="void" visibility="public">
+          <Argument type="String" name="community"/>
+        </Method>
+        <Method name="getDbDoctorPatientDirectory" returnType="void" visibility="public">
+          <Argument type="String" name="Doctor"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Person" package="Person" visibility="public" xPosition="1569.0" yPosition="1178.0">
+      <Fields>
+        <Field name="Name" type="String" visibility="protected"/>
+        <Field name="age" type="int" visibility="protected"/>
+        <Field name="Gender" type="String" visibility="protected"/>
+        <Field name="phNo" type="int" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="setPhNo" returnType="void" visibility="public">
+          <Argument type="int" name="phNo"/>
+        </Method>
+        <Method name="getPhNo" returnType="int" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="Name"/>
+        </Method>
+        <Method name="setAge" returnType="void" visibility="public">
+          <Argument type="int" name="age"/>
+        </Method>
+        <Method name="setGender" returnType="void" visibility="public">
+          <Argument type="String" name="Gender"/>
+        </Method>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="getAge" returnType="int" visibility="public"/>
+        <Method name="getGender" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="PersonDirectory" package="Person" visibility="public" xPosition="920.0" yPosition="420.0">
+      <Fields>
+        <Field name="personDirectory" type="ArrayList&lt;Person&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getPersonDirectory" returnType="ArrayList&lt;Person&gt;" visibility="public"/>
+        <Method name="setPersonDirectory" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Person&gt;" name="personDirectory"/>
+        </Method>
+        <Method name="addNewPerson" returnType="Person" visibility="public"/>
+        <Method name="deletePerson" returnType="void" visibility="public">
+          <Argument type="Person" name="newPerson"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Residence" package="Residence" visibility="public" xPosition="2020.0" yPosition="1441.0">
+      <Fields>
+        <Field name="Residence" type="String" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="setResidence" returnType="void" visibility="public">
+          <Argument type="String" name="Residence"/>
+        </Method>
+        <Method name="getResidence" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="SQLConnection" package="SQLConnection" visibility="public" xPosition="1391.0" yPosition="345.0">
+      <Fields>
+        <Field name="con" type="Connection" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="dbconnector" returnType="Connection" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="Vitals" package="Vitals" visibility="public" xPosition="847.0" yPosition="677.0">
+      <Fields>
+        <Field name="BloodPressure" type="int" visibility="protected"/>
+        <Field name="Temperature" type="int" visibility="protected"/>
+        <Field name="Pulse" type="int" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="setBloodPressure" returnType="void" visibility="public">
+          <Argument type="int" name="BloodPressure"/>
+        </Method>
+        <Method name="setTemperature" returnType="void" visibility="public">
+          <Argument type="int" name="Temperature"/>
+        </Method>
+        <Method name="setPulse" returnType="void" visibility="public">
+          <Argument type="int" name="Pulse"/>
+        </Method>
+        <Method name="getBloodPressure" returnType="int" visibility="public"/>
+        <Method name="getTemperature" returnType="int" visibility="public"/>
+        <Method name="getPulse" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="Patient.Patient" target="Encounter.EncounterHistory" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Person.Person" target="Residence.Residence"/>
+    <UseRelation source="Encounter.EncounterHistory" target="Encounter.Encounter" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="patientDirectory" source="Patient.PatientDirectory" target="Patient.Patient" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Patient&gt;"/>
+    <UseRelation source="Doctor.DoctorDirectory" target="Doctor.Doctor" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="HospitalDirectory" source="Hospital.HospitalDirectory" target="Hospital.Hospital" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Hospital&gt;"/>
+    <UseRelation source="Person.PersonDirectory" target="Person.Person" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Patient.Patient" target="Person.Person"/>
+    <HasRelation name="list" source="Doctor.DoctorDirectory" target="Doctor.Doctor" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Doctor&gt;"/>
+    <IsRelation name="is" source="Community.Community" target="City.City"/>
+    <HasRelation name="personDirectory" source="Person.PersonDirectory" target="Person.Person" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Person&gt;"/>
+    <HasRelation name="EH" source="Patient.Patient" target="Encounter.EncounterHistory" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Patient.PatientDirectory" target="Patient.Patient" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="EncounterHistory" source="Encounter.EncounterHistory" target="Encounter.Encounter" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Encounter&gt;"/>
+    <IsRelation name="is" source="Residence.Residence" target="Community.Community"/>
+    <IsRelation name="is" source="Encounter.Encounter" target="Vitals.Vitals"/>
+    <UseRelation source="Hospital.HospitalDirectory" target="Hospital.Hospital" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Hospital.Hospital" target="Community.Community"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
