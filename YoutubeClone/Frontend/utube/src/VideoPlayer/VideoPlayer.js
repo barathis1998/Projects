@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { DefaultPlayer as Video } from "react-html5video";
+import { DefaultPlayer as Video } from "react-html5video/dist";
 import "react-html5video/dist/styles.css";
-import thumb from "./../img/thumb.jpg";
-import styles from "./../VideoPlayer/styles-module.scss";
+import thumb from "../img/thumb.jpg";
+import styles from "./styles-module.scss";
 import { FaRegThumbsUp, FaRegThumbsDown } from "react-icons/fa";
 // import NavBar from './../NavBar/Navbar'
-import NavBar from "./../Components/NavBar/NavBar";
+import NavBar from "../Components/NavBar/NavBar";
 import { useParams } from "react-router-dom";
 import { useRef } from "react";
 

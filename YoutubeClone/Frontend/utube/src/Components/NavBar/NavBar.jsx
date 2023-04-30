@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { AiOutlinePlayCircle, AiOutlineUpload } from "react-icons/ai";
-import Container from "react-bootstrap/Container";
+import Container from "react-bootstrap/esm/Container";
 import "./NavBar.scss";
-import Navbar from "react-bootstrap/Navbar";
+import Navbar from "react-bootstrap/esm/Navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import {ReactComponent as Svg} from '../../img/Morph & Color Animations.svg'
 

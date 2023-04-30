@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react';
-import HistoryCard from '../Histories/HistoryCard'
+import HistoryCard from './HistoryCard'
 import { BACKEND_URI } from "../Config/constants";
 import NavBar from '../NavBar/NavBar';
 import Homepage from '../Homepage/homepage';
